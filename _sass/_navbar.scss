@@ -1,0 +1,11 @@
+.navbar {
+  height: 60px;
+  background-color: $color-navbar;
+  padding-left: 300px;
+  padding-right: 300px;
+  font-size: 1.2em;
+
+  span {
+    cursor: pointer;
+  }
+}
