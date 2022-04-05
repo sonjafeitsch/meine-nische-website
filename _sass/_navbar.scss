@@ -1,11 +1,67 @@
 .navbar {
-  height: 60px;
-  background-color: $color-navbar;
-  padding-left: 300px;
-  padding-right: 300px;
-  font-size: 1.2em;
-
+  font-size: 2.5em;
+  background-color: white;
+  height: auto;
   span {
     cursor: pointer;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.menu-opener {
+  cursor: pointer;
+  display: block;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.navbar-links {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+.call-to-action {
+  display: none !important;
+}
+
+#side-menu:checked ~ .navbar-links {
+  background-color: $color-navbar !important;
+  opacity: 1 !important;
+  max-height: 300px;
+}
+
+@media screen and (min-width: 835px) and (max-resolution: 120dpi) {
+  .navbar {
+    font-size: 1.2em;
+    background-color: $color-navbar;
+    padding-left: 16.5%;
+    padding-right: 16.5%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  .call-to-action {
+    display: flex !important;
+  }
+
+  .menu-opener {
+    display: none;
   }
 }

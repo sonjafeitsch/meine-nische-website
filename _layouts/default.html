@@ -7,16 +7,17 @@
   <link href="styles/navbar.css" rel="stylesheet"/>
 </head>
 <body class="d-flex flex-column h-100 w-100 m-0">
-<div class="navbar d-flex justify-content-between align-items-center">
-  <div class="d-flex flex-gap-4">
+<div class="navbar">
+  <input class="side-menu" type="checkbox" id="side-menu"/>
+  <div class="navbar-links">
     <span>Heim</span>
     <span>Das Studio</span>
     <span>Workshops & Kurse</span>
     <span>Kontakt</span>
   </div>
-  <span class="button">Jetzt Mieten</span>
+  <span class="button call-to-action">Jetzt Mieten</span>
+  <label class="menu-opener" for="side-menu"><span class="menu-opener-label">Menü</span></label>
 </div>
-{{ page.text }}
 {{ content }}
 </body>
 </html>
