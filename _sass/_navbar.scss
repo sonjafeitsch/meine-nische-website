@@ -1,5 +1,4 @@
 .navbar {
-  font-size: 2.5em;
   background-color: white;
   height: auto;
   span {
@@ -36,15 +35,12 @@
 #side-menu:checked ~ .navbar-links {
   background-color: $color-navbar !important;
   opacity: 1 !important;
-  max-height: 300px;
+  max-height: 600px;
 }
 
-@media screen and (min-width: 835px) and (max-resolution: 120dpi) {
+@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
   .navbar {
-    font-size: 1.2em;
     background-color: $color-navbar;
-    padding-left: 16.5%;
-    padding-right: 16.5%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -55,6 +51,7 @@
     flex-direction: row;
     max-height: 300px;
     opacity: 1;
+    padding: 0;
   }
 
   .call-to-action {

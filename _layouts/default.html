@@ -3,21 +3,47 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
+  <link href="styles/reset.css" rel="stylesheet"/>
   <link href="styles/main.css" rel="stylesheet"/>
   <link href="styles/navbar.css" rel="stylesheet"/>
+  <link href="styles/footer.css" rel="stylesheet"/>
 </head>
 <body class="d-flex flex-column h-100 w-100 m-0">
-<div class="navbar">
-  <input class="side-menu" type="checkbox" id="side-menu"/>
+<header class="padded-container navbar">
+  <input class="side-menu" id="side-menu" type="checkbox"/>
   <div class="navbar-links">
-    <span>Heim</span>
+    <span>Startseite</span>
     <span>Das Studio</span>
     <span>Workshops & Kurse</span>
     <span>Kontakt</span>
   </div>
   <span class="button call-to-action">Jetzt Mieten</span>
   <label class="menu-opener" for="side-menu"><span class="menu-opener-label">Menü</span></label>
-</div>
+</header>
 {{ content }}
+<footer class="padded-container d-flex footer justify-content-between">
+  <div class="d-flex flex-column footer-column flex-gap-3">
+    <span class="text-highlight themed-text big-size">Kontakt</span>
+    <span class="text-important">Kreativstudio Meine Nische</span>
+    <span>Sonja Feitsch</span>
+    <span>Zinkhof 1</span>
+    <span>97070 Würzburg</span>
+    <span class="text-important"><a href="mailto:hallo@meine-nische.de">hallo@meine-nische.de</a></span>
+  </div>
+  <div class="d-flex flex-column footer-column flex-gap-3 align-items-start">
+    <span class="text-highlight themed-text big-size">Komm vorbei</span>
+    <span>Schupper mal rein und lerne das Studio bei einem gemütlichen Treffen kennen.</span>
+    <a href="mailto:hallo@meine-nische.de"><span class="button filled">Termin vereinbaren</span></a>
+  </div>
+  <div class="d-flex flex-column footer-column flex-gap-3">
+    <span class="text-highlight big-size">Menü</span>
+    <span class="cursor-pointer">Startseite</span>
+    <span class="cursor-pointer">Das Studio</span>
+    <span class="cursor-pointer">Workshops & Kurse</span>
+    <span class="cursor-pointer">Kontakt</span>
+    <span class="cursor-pointer">Impressum</span>
+    <span class="cursor-pointer">Datenschutz</span>
+  </div>
+</footer>
 </body>
 </html>

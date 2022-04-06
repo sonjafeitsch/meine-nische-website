@@ -1,0 +1,43 @@
+.button {
+  height: 32px;
+  border-radius: 17px;
+  border: 2px solid $accent;
+  font-size: 0.8em;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+  color: $accent;
+  background-color: $bright-background;
+}
+
+.button.filled {
+  background-color: $accent;
+  color: white;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay_wght.ttf") format("truetype");
+  font-weight: 800;
+}
+
+.themed-text {
+  color: $accent;
+}
+
+.text-highlight {
+  font-family: "PlayfairDisplay", serif;
+}
+
+.big-size {
+  font-size: 1.5em;
+}
+
+.text-important {
+  font-weight: bold;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

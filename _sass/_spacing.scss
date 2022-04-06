@@ -39,3 +39,15 @@ $sides: (top, bottom, left, right);
     padding: #{$amount}px !important;
   }
 }
+
+.padded-container:not(.navbar) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
+  .padded-container {
+    padding-left: 16.5% !important;
+    padding-right: 16.5% !important;
+  }
+}
