@@ -1,8 +1,7 @@
-
-
 .footer {
   flex-direction: column;
-  gap: 40px
+  gap: 2em;
+  margin-top: 5em
 }
 
 @media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
