@@ -1,2 +1,3 @@
 sass:
   style: compressed
+mobile_breakpoint: 920px

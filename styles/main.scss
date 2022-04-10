@@ -1,5 +1,6 @@
 ---
 ---
+$mobile-breakpoint: {{ site.mobile_breakpoint }};
 @import "variables";
 @import "flex";
 @import "spacing";

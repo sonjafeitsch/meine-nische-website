@@ -4,6 +4,21 @@ title: Home
 style: homepage.css
 ---
 
+<div class="banner">
+  <div class="banner-image">
+  </div>
+  <div class="banner-text d-flex">
+    <div class="banner-logo flex-grow-1 p-4">
+      <img srcset="/images/logo_300w.png 300w, /images/logo_200w.png 200w" sizes="(max-width: {{ site.mobile_breakpoint }}) 200px, 300px" src="/images/logo_150w.png" alt="Logo der Nische">
+    </div>
+    <div class="p-4 d-flex flex-grow-1 flex-column text-highlight huge-size w-100 justify-content-center">
+      <span>Kreatives</span>
+      <span>Kurse</span>
+      <span>Raum</span>
+    </div>
+  </div>
+</div>
+
 <article class="d-flex block padded-container flex-gap-4">
   <div class="intro-card text-highlight big-size">
     Du suchst <span class="themed-text">einen<br> einzigartigen Raum</span><br> für deine<br> Veranstaltung?
@@ -19,15 +34,48 @@ style: homepage.css
 </article>
 
 <article class="d-flex block padded-container flex-gap-4">
+  <div class="studio-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
+    <div class="text-highlight big-size">
+      Das Kreativstudio:
+    </div>
+    <div>
+      Die Nische ist ein gemütlich eingerichteter Raum mit einem einzigartigen Flair.
+    </div>
+    <div>
+      Du kannst 65qm Fläche für deine Veranstaltung nutzen.
+    </div>
+    <div>
+      Egal ob Tische, Stühle, Media-Wagen, Matten oder Kissen, richte Dir die Nische so ein wie Du es brauchst.
+    </div>
+    <span class="button">Schau mal rein</span>
+  </div>
+  <div class="studio-card d-flex flex-column flex-gap-4 align-items-start">
+    <div class="studio-image">
+      <picture>
+        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
+        <img alt="Bild des Kreativraums Meine Nische"
+             src="images/nische_ganz_500w.png"/>
+      </picture>
+    </div>
+  </div>
+</article>
+
+<article class="d-flex block padded-container flex-gap-4">
   <div class="joga-card d-flex flex-column flex-gap-4 align-items-start">
-    <div class="joga-image"><img width="500" height="300" alt="Joga Image" src=""></div>
+    <div class="joga-image">
+      <picture>
+        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
+        <img alt="Joga Bild"
+             src="images/malkurs_500w.png"/>
+      </picture>
+    </div>
   </div>
   <div class="joga-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
     <div class="text-highlight big-size">
       Du willst etwas <span class="themed-text">nur<br> für dich</span> machen?
     </div>
     <div>
-      Im Kreativstudio finden regelmäßig<br> Yogakurse, Meditationsgruppen, oder<br> Watercolor-Workshops statt.
+      Im Kreativstudio finden regelmäßig<br> Jogakurse, Meditationsgruppen, oder<br> Watercolor-Workshops statt.
     </div>
     <div>
       Schau doch mal bei den Workshops & Kursen rein<br> und finde die Veranstaltung, die du jetzt<br> gerade brauchst.

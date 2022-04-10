@@ -1,0 +1,135 @@
+.block {
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.intro-card {
+  position: relative;
+}
+
+.intro-card:first-of-type:before {
+  content: '';
+  width: 5em;
+  height: 5em;
+  border-radius: 3em;
+  position: absolute;
+  border: 2px solid $color-navbar;
+  left: -2em;
+  top: -2em;
+  z-index: -10;
+}
+
+.banner-image {
+  background: url(/images/nische_ganz_tische_1000w.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 66.7%;
+  z-index: -10;
+}
+
+.banner-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 252px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  flex-direction: column;
+}
+
+picture {
+  display: none;
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
+  .block {
+    flex-direction: row !important;
+  }
+  .banner-image {
+    background: url(/images/nische_ganz_tische_2000w.png) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    height: 0;
+    width: 100% !important;
+    z-index: -10;
+  }
+  .banner-logo {
+    flex-basis: 50%;
+  }
+  .banner-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 700px;
+    height: 252px;
+    flex-direction: row;
+  }
+  .intro-card {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+  .map-info {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+  .studio-card {
+    flex-basis: 50%;
+    flex-grow: 1;
+    position: relative;
+  }
+  .studio-image {
+    width: 400px;
+    height: 726px;
+    border-radius: 200px 200px 0px 0px;
+    overflow: hidden;
+
+    picture {
+      display: block;
+      position: relative;
+    }
+  }
+  .studio-image:before {
+    content: '';
+    border: 2px solid $color-image-frame;
+    z-index: -10;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+  }
+  .joga-card {
+    flex-basis: 50%;
+    flex-grow: 1;
+    position: relative;
+  }
+  .joga-image {
+    width: 500px;
+    height: 650px;
+    overflow: hidden;
+
+    picture {
+      display: block;
+      position: relative;
+      top: -100px
+    }
+  }
+  .joga-image:before {
+    content: '';
+    border: 2px solid $color-image-frame;
+    width: inherit;
+    height: inherit;
+    z-index: -10;
+    position: absolute;
+    top: 2em;
+    left: -2em;
+  }
+}
