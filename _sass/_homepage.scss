@@ -15,7 +15,7 @@
   position: absolute;
   border: 2px solid $color-navbar;
   left: -2em;
-  top: -2em;
+  top: 1em;
   z-index: -10;
 }
 
@@ -59,15 +59,12 @@ picture {
     width: 100% !important;
     z-index: -10;
   }
-  .banner-logo {
-    flex-basis: 50%;
-  }
   .banner-text {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 700px;
+    width: 820px;
     height: 252px;
     flex-direction: row;
   }
@@ -97,11 +94,11 @@ picture {
   }
   .studio-image:before {
     content: '';
-    border: 2px solid $color-image-frame;
+    border: 2px solid $color-navbar;
     z-index: -10;
     position: absolute;
-    top: 1em;
-    left: 1em;
+    top: 2em;
+    left: 2em;
     height: inherit;
     width: inherit;
     border-radius: inherit;
@@ -124,7 +121,7 @@ picture {
   }
   .joga-image:before {
     content: '';
-    border: 2px solid $color-image-frame;
+    border: 2px solid $color-navbar;
     width: inherit;
     height: inherit;
     z-index: -10;
