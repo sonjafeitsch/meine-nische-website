@@ -6,12 +6,27 @@
   flex-direction: column;
 }
 
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
+  .flex-responsive {
+    flex-direction: row !important;
+  }
+}
+
 .align-items-center {
   align-items: center;
 }
 
 .align-items-start {
   align-items: start;
+}
+
+.align-items-end {
+  align-items: end;
 }
 
 .justify-content-even {
@@ -24,4 +39,8 @@
 
 .justify-content-center {
   justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }

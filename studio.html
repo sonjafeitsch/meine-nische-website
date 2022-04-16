@@ -5,97 +5,113 @@ style: studio.css
 permalink: studio
 ---
 
-<div class="banner">
-  <div class="banner-image">
-  </div>
-  <div class="banner-text d-flex">
-    <div class="flex-grow-1 p-4">
-      <img srcset="/images/logo_300w.png 300w, /images/logo_200w.png 200w" sizes="(max-width: {{ site.mobile_breakpoint }}) 200px, 300px" src="/images/logo_150w.png" alt="Logo der Nische">
+<article class="d-flex flex-column flex-gap-4">
+  <div class="themed-text huge-size text-highlight">Das Studio</div>
+  <div class="w-100 flex-responsive flex-gap-4 flex-wrap justify-content-between">
+    <picture>
+      <img alt="Bild des Kreativraums Meine Nische mit Tischen und Mediawagen"
+           src="images/nische_mit_kurs_450w.png"/>
+    </picture>
+    <div class="d-flex flex-column">
+      <picture>
+        <img alt="Bild des Kreativraums Meine Nische leer"
+             src="images/nische_leer_450w.png"/>
+      </picture>
+      <div style="width: 450px">
+        Das Kreativstudio <span class="text-important">Meine Nische</span> ist ein einzigartiger Raum in Würzburg. Das
+        Studio liegt in einem ruhigen
+        Hinterhof in der Altstadt und bietet dir Platz für deine Veranstaltung.
+      </div>
     </div>
-    <div class="intro-card text-highlight huge-size p-4">
-      Du suchst <span class="themed-text">einen einzigartigen Raum</span> für deine Veranstaltung?
-    </div>
-  </div>
-</div>
-
-<article class="d-flex block padded-container flex-gap-4">
-  <div class="intro-card d-flex flex-grow-1 flex-column text-highlight huge-size w-100 justify-content-center">
-    <span>Kreatives</span>
-    <span>Kurse</span>
-    <span>Raum</span>
-  </div>
-
-  <div class="intro-card d-flex flex-column flex-gap-4 align-items-start">
-    <div>Du suchst einen Raum für deinen <br><span class="text-important">kreativen Makramee-Workshop?</span></div>
-    <div>Du suchst einen Raum für dein <br><span class="text-important">inspirierendes Meetup?</span></div>
-    <div>Du suchst einen Raum für deine <br><span class="text-important">gemütliche Joga-Stunde?</span></div>
-    <div>Dann komm in das Kreativstudio <span class="text-important">Meine Nische.</span></div>
-    <div>Dort findest du den perfekten Raum<br>für deine ganz besondere Veranstaltung.</div>
-    <a href="mailto:hallo@meine-nische.de"><span class="button filled">Jetzt mieten!</span></a>
   </div>
 </article>
 
-<article class="d-flex block padded-container flex-gap-4">
-  <div class="studio-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
-    <div class="text-highlight big-size">
-      Das Kreativstudio:
+<article class="flex-responsive flex-gap-4 flex-wrap justify-content-between">
+  <div class="d-flex flex-column keyhole-image-container">
+    <picture class="keyhole-image">
+      <img alt="Bild des Kreativraums in Richtung Eingang mit WC"
+           src="images/nische_eingang_wc_240w.png"/>
+    </picture>
+    <span class="big-size text-highlight themed-text-secondary">Raum</span>
+    <span>Die Nische bietet dir genügend Platz für deine Veranstaltung. Viel Holz, Pflanzen und helles Licht geben dem Raum ein gemütliches Flair.
+      Zusätzlich zum Hauptraum gibt es einen separaten Raum mit Spüle und einen Toilettenraum mit Dusche und WC.</span>
+  </div>
+  <div class="d-flex flex-column keyhole-image-container">
+    <picture class="keyhole-image">
+      <img alt="Bild des Kreativraums auf das Regal"
+           src="images/nische_regal_240w.png"/>
+    </picture>
+    <span class="big-size text-highlight themed-text-secondary">Einrichtung</span>
+    <span>Die Einrichtung wurde schlicht und natürlich gehalten.
+      Passend zu deiner Veranstaltung kannst du den Raum gestalten. Entweder leer, mit Tischen oder Sitzkissen – ganz wie du magst.</span>
+  </div>
+  <div class="d-flex flex-column keyhole-image-container">
+    <picture class="keyhole-image">
+      <img alt="Bild des Kreativraums mit Kursbestuhlung und Mediawagen"
+           src="images/nische_mediawagen_240w.png"/>
+    </picture>
+    <span class="big-size text-highlight themed-text-secondary">Austattung</span>
+    <span>Ob Workshop mit Tischen, Joga-Stunde mit Matten, Mediationskurs mit Kissen oder ein
+    Meetup mit Präsentation – Die Nische bietet eine umfangreiche Ausstattung.</span>
+  </div>
+</article>
+
+<article class="d-flex flex-column flex-gap-4">
+  <div class="text-highlight huge-size themed-text">
+    Miete und Ausstattung
+  </div>
+  <div class="flex-responsive align-items-end">
+    <div class="d-flex flex-column flex-gap-4" style="flex-basis: 50%">
+      <div>
+        Der Mietpreis beträgt pro Stunde 25 Euro. Ab einer Mietzeit von 6 Stunden gilt ein Tagessatz von 180 € / Tag.
+      </div>
+      <div class="text-important">
+        Im Mietpreis ist die Nutzung folgender Ausstattung gemäß Hausordnung enthalten:
+      </div>
+      <div>
+        <ul>
+          <li class="d-flex align-items-center">65m² großer Veranstaltungsraum, Bad und Küche (ohne Kochmöglichkeit)</li>
+          <li class="d-flex align-items-center">Sieben Tische und Stühle</li>
+          <li class="d-flex align-items-center">Hocker, Decken, Kissen, Jogamatten</li>
+          <li class="d-flex align-items-center">Mediawagen (mobiler Bildschirm mit zwei HDMI-Anschlüssen)</li>
+          <li class="d-flex align-items-center">WLAN und LAN</li>
+          <li class="d-flex align-items-center">Mineralwasser und Tee</li>
+          <li class="d-flex align-items-center">kostenlos, aber auf Nachfrage: Objektkamera</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-start flex-gap-4" style="flex-basis: 50%">
+      <div>Du möchtest Dir die Nische anschauen? Kein Problem, komm einfach zu einem Kennenlern-Treffen vorbei, Ich freue mich dich kennenzulernen.</div>
+      <a href="mailto:hallo@meine-nische.de"><span class="button filled">Lerne die Nische kennen</span></a>
+    </div>
+  </div>
+</article>
+
+<article class="flex-responsive flex-gap-4">
+  <div class="d-flex flex-column" style="min-width: 300px">
+    <div class="text-highlight huge-size themed-text-secondary">
+      Das bin ich:
     </div>
     <div>
-      Die Nische ist ein gemütlich eingerichteter Raum mit einem einzigartigen Flair.
+      Ich bin Sonja und der kreative Kopf hinter der Nische.
+      Unter dem Namen Aquarell von Naturell bin ich als Illustratorin tätig und im Oktober 2020 habe ich die Nische ins Leben gerufen.
+      Mein Herz schlägt für ruhige Spaziergänge, duftige Franzbrötchen und die kleinen Glücksmomente im Alltag.
     </div>
     <div>
-      Du kannst 65qm Fläche für deine Veranstaltung nutzen.
+      Mit meinem Studio möchte ich anderen Menschen wie Dir einen Raum geben.
+      Einen Raum für <span class="text-important">besondere Veranstaltungen</span>,
+      <span class="text-important">kreative Auszeiten vom Alltag</span>, <span class="text-important">inspirierendem Meetups</span> – einfach ein kreatives Zuhause für Dich.
     </div>
     <div>
       Egal ob Tische, Stühle, Media-Wagen, Matten oder Kissen, richte Dir die Nische so ein wie Du es brauchst.
     </div>
-    <span class="button">Schau mal rein</span>
   </div>
   <div class="studio-card d-flex flex-column flex-gap-4 align-items-start">
-    <div class="studio-image">
+    <div class="sonja-image">
       <picture>
-        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
         <img alt="Bild des Kreativraums Meine Nische"
-             src="images/nische_ganz_500w.png"/>
+             src="images/nische_sonja_600w.png"/>
       </picture>
-    </div>
-  </div>
-</article>
-
-<article class="d-flex block padded-container flex-gap-4">
-  <div class="joga-card d-flex flex-column flex-gap-4 align-items-start">
-    <div class="joga-image">
-      <picture>
-        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
-        <img alt="Joga Bild"
-             src="images/malkurs_500w.png"/>
-      </picture>
-    </div>
-  </div>
-  <div class="joga-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
-    <div class="text-highlight big-size">
-      Du willst etwas <span class="themed-text">nur<br> für dich</span> machen?
-    </div>
-    <div>
-      Im Kreativstudio finden regelmäßig<br> Jogakurse, Meditationsgruppen, oder<br> Watercolor-Workshops statt.
-    </div>
-    <div>
-      Schau doch mal bei den Workshops & Kursen rein<br> und finde die Veranstaltung, die du jetzt<br> gerade brauchst.
-    </div>
-    <span class="button">Finde deine Veransaltung</span>
-  </div>
-</article>
-
-<article class="d-flex block padded-container flex-gap-4">
-  <div class="map-info d-flex flex-column flex-gap-4">
-    <div class="text-highlight big-size">
-      So findest du die Nische:
-    </div>
-    <div class="d-flex flex-column flex-gap-4 align-items-start">
-      Die Nische befindet sich im Zinkhof 1, einem<br>
-      ruhigem Hinterhof mitten in der Altstadt von<br>
-      Würzburg. Zum Haupteingang kommst du<br>
-      über die Rittergasse/Büttnerstraße.
     </div>
   </div>
 </article>

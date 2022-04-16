@@ -40,14 +40,16 @@ $sides: (top, bottom, left, right);
   }
 }
 
-.padded-container:not(.navbar) {
-  padding-left: 10px;
-  padding-right: 10px;
+.main-margin {
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
-  .padded-container {
-    padding-left: 16.5% !important;
-    padding-right: 16.5% !important;
+  .main-margin {
+    margin-left: 16.5% !important;
+    margin-right: 16.5% !important;
   }
+  overflow: hidden;
 }

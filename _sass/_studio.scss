@@ -1,0 +1,30 @@
+article {
+  margin-top: 5em;
+}
+
+.keyhole-image-container {
+  width: 240px;
+}
+
+.keyhole-image {
+  overflow: hidden;
+  border-radius: 120px 120px 0 0;
+  width: 240px;
+}
+
+li:before {
+  content: '';
+  min-width: 10px;
+  display: inline-block;
+  height: 10px;
+  background-color: $accent-secondary;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
+  .intro-card {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+}

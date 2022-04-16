@@ -1,5 +1,4 @@
 .block {
-  flex-direction: column;
   margin-top: 5em;
 }
 
@@ -48,9 +47,6 @@ picture {
 }
 
 @media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
-  .block {
-    flex-direction: row !important;
-  }
   .banner-image {
     background: url(../images/nische_ganz_tische_2000w.png) !important;
     background-size: contain !important;

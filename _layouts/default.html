@@ -11,20 +11,22 @@
 </head>
 <body class="d-flex flex-column h-100 w-100 m-0">
 <label class="menu-opener p-2" for="side-menu"><span class="menu-opener-label">Menü</span></label>
-<header class="padded-container navbar">
+<header class="navbar">
   <input class="side-menu" id="side-menu" type="checkbox"/>
   <div class="navbar-links">
     <span><a href="..">Startseite</a></span>
     <span><a href="studio">Das Studio</a></span>
     <span><a href="kurse">Workshops & Kurse</a></span>
-    <span>Kontakt</span>
+    <span><a href="kontakt">Kontakt</a></span>
   </div>
   <span class="button call-to-action">Jetzt Mieten</span>
 </header>
+<div class="main-margin">
 {{ content }}
-<footer class="padded-container d-flex footer justify-content-between">
+</div>
+<footer class="main-margin d-flex footer justify-content-between">
   <div class="d-flex flex-column footer-column flex-gap-3">
-    <span class="text-highlight themed-text big-size">Kontakt</span>
+    <span class="text-highlight themed-text-secondary big-size">Kontakt</span>
     <span class="text-important">Kreativstudio Meine Nische</span>
     <span>Sonja Feitsch</span>
     <span>Zinkhof 1</span>
@@ -32,18 +34,18 @@
     <span class="text-important"><a href="mailto:hallo@meine-nische.de">hallo@meine-nische.de</a></span>
   </div>
   <div class="d-flex flex-column footer-column flex-gap-3 align-items-start">
-    <span class="text-highlight themed-text big-size">Komm vorbei</span>
+    <span class="text-highlight themed-text-secondary big-size">Komm vorbei</span>
     <span>Schupper mal rein und lerne das Studio bei einem gemütlichen Treffen kennen.</span>
     <a href="mailto:hallo@meine-nische.de"><span class="button filled">Termin vereinbaren</span></a>
   </div>
   <div class="d-flex flex-column footer-column flex-gap-3">
     <span class="text-highlight big-size">Menü</span>
-    <span class="cursor-pointer">Startseite</span>
-    <span class="cursor-pointer">Das Studio</span>
-    <span class="cursor-pointer">Workshops & Kurse</span>
-    <span class="cursor-pointer">Kontakt</span>
-    <span class="cursor-pointer">Impressum</span>
-    <span class="cursor-pointer">Datenschutz</span>
+    <span class="cursor-pointer"><a href="..">Startseite</a></span>
+    <span class="cursor-pointer"><a href="studio">Das Studio</a></span>
+    <span class="cursor-pointer"><a href="kurse">Workshops & Kurse</a></span>
+    <span class="cursor-pointer"><a href="kontakt">Kontakt</a></span>
+    <span class="cursor-pointer"><a href="kontakt">Impressum</a></span>
+    <span class="cursor-pointer"><a href="kontakt">Datenschutz</a></span>
   </div>
 </footer>
 </body>
