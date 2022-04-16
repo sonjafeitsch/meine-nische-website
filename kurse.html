@@ -1,0 +1,66 @@
+---
+layout: default
+title: Meine Nische | Kurse
+style: kurse.css
+permalink: kurse
+events:
+  - name: Sprech- und Stimmtraining
+    time: 30. April 2022 – 13 bis 10 Uhr
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    address: hallo@stimmtraining.de
+  - name: "Watercolor Workshop: Pure & Simple"
+    time: 27.Mai 2022 – 18 bis 22 Uhr
+    description: Du denkst du kannst nicht malen? Dann ist dieser Workshop genau für dich. Hier geht es nicht um konkrete Motive, sondern nur um einfache aber wunderschöne Formen mit Aquarellfarben. Daher vergiss deine Hemmungen und sei dabei.
+    address: sonja@aquarellvonnaturell.de
+---
+
+<article class="d-flex block padded-container flex-gap-4">
+  <div class="studio-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
+    <div class="text-highlight themed-text big-size">
+      Veranstaltungen
+    </div>
+    <div>
+      Du möchtest Dir etwas Gutes tun? Dich bei einer Yoga-Stunde entspannen? Oder bei einem kreativen Workshop fernab
+      vom Bildschirm wieder etwas mit den eigenen Händen machen?
+    </div>
+    <div>Dann besuche eine der wundervolle Veranstaltungen in
+      der Nische. Hier findest du alle Events, die aktuell stattfinden.
+    </div>
+  </div>
+  <div class="studio-card d-flex flex-column flex-gap-4 align-items-center">
+    <div class="keyhole-image">
+      <picture>
+        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
+        <img alt="Teaser für Kurse"
+             src="images/stift_500w.png"/>
+      </picture>
+    </div>
+  </div>
+</article>
+
+{% for event in page.events %}
+<article class="d-flex block padded-container flex-gap-4">
+  <div class="studio-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
+    <div class="text-highlight big-size">
+      {{ event.name }}
+    </div>
+    <div class="text-important">
+      {{ event.time }}
+    </div>
+    <div>{{event.description}}</div>
+    <div class="d-flex align-items-center flex-gap-3"><span class="arrow-right">🡒</span>
+      <div class="d-flex flex-column"><span>Infos und Anmeldung unter</span><span class="text-important">{{event.address}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="studio-card d-flex flex-column flex-gap-4 align-items-center">
+    <div class="event-image">
+      <picture>
+        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
+        <img alt="Teaser für Kurse"
+             src="images/events/{{event.image}}"/>
+      </picture>
+    </div>
+  </div>
+</article>
+{% endfor %}

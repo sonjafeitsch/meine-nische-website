@@ -1,0 +1,56 @@
+picture {
+  display: none;
+}
+
+.intro-card {
+  position: relative;
+}
+
+.block {
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border-radius: 50%;
+  background-color: #EFEAE4;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
+  .block {
+    flex-direction: row;
+  }
+  .studio-card {
+    flex-basis: 50%;
+    flex-grow: 1;
+    position: relative;
+  }
+  .keyhole-image {
+    width: 400px;
+    height: 629px;
+    border-radius: 200px 200px 0px 0px;
+    overflow: hidden;
+
+    picture {
+      display: block;
+      position: relative;
+    }
+  }
+  .event-image {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-color: $accent;
+
+    picture {
+      display: block;
+      position: relative
+    }
+  }
+}
