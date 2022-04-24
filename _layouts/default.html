@@ -1,4 +1,20 @@
 <!doctype html>
+{% assign homeClass = '' %}
+{% if page.permalink == '/' %}
+{%assign homeClass = 'text-important' %}
+{%endif%}
+{% assign studioClass = '' %}
+{% if page.permalink == 'studio' %}
+{%assign studioClass = 'text-important' %}
+{%endif%}
+{% assign kurseClass = '' %}
+{% if page.permalink == 'kurse' %}
+{%assign kurseClass = 'text-important' %}
+{%endif%}
+{% assign kontaktClass = '' %}
+{% if page.permalink == 'kontakt' %}
+  {%assign kontaktClass = 'text-important' %}
+{%endif%}
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -14,17 +30,17 @@
 <header class="navbar">
   <input class="side-menu" id="side-menu" type="checkbox"/>
   <div class="navbar-links">
-    <span><a href="..">Startseite</a></span>
-    <span><a href="studio">Das Studio</a></span>
-    <span><a href="kurse">Workshops & Kurse</a></span>
-    <span><a href="kontakt">Kontakt</a></span>
+    <span class="{{ homeClass }}"><a href="..">Startseite</a></span>
+    <span class="{{ studioClass }}"><a href="studio">Das Studio</a></span>
+    <span class="{{ kurseClass }}"><a href="kurse">Workshops & Kurse</a></span>
+    <span class="{{ kontaktClass }}"><a href="kontakt">Kontakt</a></span>
   </div>
   <span class="button call-to-action">Jetzt Mieten</span>
 </header>
 <div class="main-margin">
 {{ content }}
 </div>
-<footer class="main-margin d-flex footer justify-content-between">
+<footer class="main-margin d-flex footer justify-content-between mb-3">
   <div class="d-flex flex-column footer-column flex-gap-3">
     <span class="text-highlight themed-text-secondary big-size">Kontakt</span>
     <span class="text-important">Kreativstudio Meine Nische</span>
@@ -40,12 +56,12 @@
   </div>
   <div class="d-flex flex-column footer-column flex-gap-3">
     <span class="text-highlight big-size">Menü</span>
-    <span class="cursor-pointer"><a href="..">Startseite</a></span>
-    <span class="cursor-pointer"><a href="studio">Das Studio</a></span>
-    <span class="cursor-pointer"><a href="kurse">Workshops & Kurse</a></span>
-    <span class="cursor-pointer"><a href="kontakt">Kontakt</a></span>
-    <span class="cursor-pointer"><a href="kontakt">Impressum</a></span>
-    <span class="cursor-pointer"><a href="kontakt">Datenschutz</a></span>
+    <span class="cursor-pointer {{homeClass}}"><a href="..">Startseite</a></span>
+    <span class="cursor-pointer {{studioClass}}"><a href="studio">Das Studio</a></span>
+    <span class="cursor-pointer {{kurseClass}}"><a href="kurse">Workshops & Kurse</a></span>
+    <span class="cursor-pointer {{kontaktClass}}"><a href="kontakt">Kontakt</a></span>
+    <span class="cursor-pointer {{kontaktClass}}"><a href="kontakt#datenschutz">Datenschutz</a></span>
+    <span class="cursor-pointer {{kontaktClass}}"><a href="kontakt#impressum">Impressum</a></span>
   </div>
 </footer>
 </body>

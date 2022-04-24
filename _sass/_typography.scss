@@ -9,11 +9,17 @@
   align-items: center;
   color: $accent;
   background-color: $bright-background;
+  transition: all ease 0.3s;
 }
 
-.button.filled {
+.button.filled, .button:hover {
   background-color: $accent;
   color: white;
+}
+
+.button.filled:hover {
+  background-color: $bright-background;
+  color: $accent
 }
 
 @font-face {
@@ -42,6 +48,14 @@
 .huge-size {
   font-size: 2em;
   line-height: 1.8em;
+}
+
+a {
+  transition: color ease 0.3s;
+}
+
+a:hover {
+  color: $accent-secondary
 }
 
 .text-important {
