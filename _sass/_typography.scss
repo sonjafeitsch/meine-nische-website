@@ -10,6 +10,7 @@
   color: $accent;
   background-color: $bright-background;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .button.filled, .button:hover {
@@ -28,16 +29,28 @@
   font-weight: 800;
 }
 
+@font-face {
+  font-family: "PlayfairDisplay Light";
+  src: url("../fonts/PlayfairDisplay_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
 .themed-text {
   color: $accent;
 }
-
+.themed-text-light {
+  color: $color-navbar;
+}
 .themed-text-secondary {
   color: $accent-secondary
 }
 
 .text-highlight {
   font-family: "PlayfairDisplay", serif;
+}
+
+.text-highlight.light {
+  font-family: "PlayfairDisplay Light", serif;
 }
 
 .big-size {
