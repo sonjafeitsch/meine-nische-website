@@ -23,6 +23,12 @@
   color: $accent
 }
 
+.button:disabled {
+  color: $color-navbar;
+  border: 2px solid $color-navbar;
+  background-color: $bright-background;
+}
+
 @font-face {
   font-family: "PlayfairDisplay";
   src: url("../fonts/PlayfairDisplay_wght.ttf") format("truetype");

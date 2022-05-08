@@ -8,21 +8,28 @@ permalink: belegung
 <article class="d-flex flex-column flex-gap-4">
   <section>
     Der Plan gibt die reservierten Kurszeiten an, jeder Kurs entscheidet aber selbst, ob er tatsächlich stattfindet oder
-    wegen Ferien, Krankheit oder ähnlichem kurzfristig ausfällt. Falls Sie in einen Kurs hineinschnuppern wollen, kontaktieren
+    wegen Ferien, Krankheit oder ähnlichem kurzfristig ausfällt. Falls Sie in einen Kurs hineinschnuppern wollen,
+    kontaktieren
     Sie am besten vorher den Kursleiter, ob der Kurs auch wirklich stattfindet.
   </section>
+  <div class="d-flex justify-content-end flex-gap-2 align-items-center">
+    <span id="schedule-start"></span> –
+    <span id="schedule-end"></span>
+    <button class="button" id="previous-week-button" disabled>Zurück</button>
+    <button class="button" id="next-week-button">Vor</button>
+  </div>
   <table class="w-100">
     <thead>
-      <tr>
-        <th></th>
-        <th>Montag</th>
-        <th>Dienstag</th>
-        <th>Mittwoch</th>
-        <th>Donnerstag</th>
-        <th>Freitag</th>
-        <th>Samstag</th>
-        <th>Sonntag</th>
-      </tr>
+    <tr>
+      <th></th>
+      <th>Montag</th>
+      <th>Dienstag</th>
+      <th>Mittwoch</th>
+      <th>Donnerstag</th>
+      <th>Freitag</th>
+      <th>Samstag</th>
+      <th>Sonntag</th>
+    </tr>
     </thead>
     <tr>
       <td>8:00 – 9:00</td>
@@ -167,6 +174,7 @@ permalink: belegung
   </table>
 </article>
 
-<script src="belegungsplan.js" defer>
+<script src="dayjs/dayjs.min.js"></script>
+<script src="dayjs/isoWeek.min.js"></script>
 
-</script>
+<script defer src="belegungsplan.js"></script>
