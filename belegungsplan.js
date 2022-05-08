@@ -23,7 +23,13 @@ fetch('belegung.json').then(response => {
     .filter(course => days.includes(course.day))
     .forEach(course => {
       for (let hour = course.start; hour < course.end; hour++) {
-        document.getElementById(`${course.day}-${hour}`).innerHTML = course.name
+        const element = document.getElementById(`${course.day}-${hour}`)
+        if (element.innerHTML !== '&nbsp;') {
+          element.innerHTML += '<br/>' + course.name
+          element.style = 'color: red'
+        } else {
+          element.innerHTML = course.name
+        }
       }
     })
 });
