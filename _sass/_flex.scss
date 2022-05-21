@@ -6,19 +6,15 @@
   flex-direction: column;
 }
 
-.flex-responsive {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
   .flex-responsive {
+    display: flex;
     flex-direction: row !important;
   }
 }
 
 .align-items-center {
-  align-items: center;
+  align-items: center !important;
 }
 
 .align-items-start {
