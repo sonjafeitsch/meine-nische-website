@@ -14,8 +14,8 @@ events:
     address: sonja@aquarellvonnaturell.de
 ---
 
-<article class="d-flex block flex-gap-4">
-  <div class="studio-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
+<article class="flex-responsive flex-gap-4">
+  <div class="studio-card">
     <div class="text-highlight themed-text big-size">
       Veranstaltungen
     </div>
@@ -27,7 +27,7 @@ events:
       der Nische. Hier findest du alle Events, die aktuell stattfinden.
     </div>
   </div>
-  <div class="studio-card d-flex flex-column flex-gap-4 align-items-center">
+  <div class="studio-card align-items-center">
     <div class="keyhole-image">
       <picture>
         <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
@@ -39,8 +39,8 @@ events:
 </article>
 
 {% for event in page.events %}
-<article class="d-flex block flex-gap-4">
-  <div class="studio-card d-flex flex-column flex-gap-4 align-items-start justify-content-center">
+<article class="flex-responsive flex-gap-4">
+  <div class="studio-card">
     <div class="text-highlight big-size themed-text-secondary">
       {{ event.name }}
     </div>
@@ -48,12 +48,12 @@ events:
       {{ event.time }}
     </div>
     <div>{{event.description}}</div>
-    <div class="d-flex align-items-center flex-gap-3"><span class="arrow-right">🡒</span>
-      <div class="d-flex flex-column"><span>Infos und Anmeldung unter</span><span class="text-important">{{event.address}}</span>
-      </div>
+    <div class="d-flex align-items-center flex-gap-3">
+      <span class="arrow-right"></span>
+      <div><div>Infos und Anmeldung unter</div><div class="text-important">{{event.address}}</div></div>
     </div>
   </div>
-  <div class="studio-card d-flex flex-column flex-gap-4 align-items-center">
+  <div class="studio-card align-items-center">
     <div class="event-image">
       <picture>
         <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">

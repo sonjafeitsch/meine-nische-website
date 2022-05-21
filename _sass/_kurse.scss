@@ -11,15 +11,16 @@ picture {
   margin-top: 5em;
 }
 
-.arrow-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.arrow-right:before {
+  content: '→';
   font-size: 2em;
   border-radius: 50%;
   background-color: #EFEAE4;
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
@@ -30,6 +31,9 @@ picture {
     flex-basis: 50%;
     flex-grow: 1;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .keyhole-image {
     width: 400px;

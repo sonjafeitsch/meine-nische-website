@@ -29,6 +29,11 @@ picture {
 }
 
 @media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
+  .studio-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .intro-card {
     flex-basis: 50%;
     flex-grow: 1;
