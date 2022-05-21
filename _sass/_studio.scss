@@ -1,11 +1,12 @@
 .keyhole-image-container {
-  width: 240px;
+  width: 100%;
+  margin-bottom: 32px;
 }
 
 .keyhole-image {
+  width: 100%;
   overflow: hidden;
-  border-radius: 120px 120px 0 0;
-  width: 240px;
+  border-radius: 999px 999px 0 0;
 }
 
 li:before {
@@ -16,11 +17,24 @@ li:before {
   background-color: $accent-secondary;
   border-radius: 50%;
   margin-right: 5px;
+  margin-bottom: 0.12em;
+}
+
+.sonja-image {
+  width: 100%;
 }
 
 @media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {
-  .intro-card {
-    flex-basis: 50%;
-    flex-grow: 1;
+  .keyhole-image-container {
+    width: 240px;
+  }
+
+  .keyhole-image {
+    overflow: hidden;
+    border-radius: 120px 120px 0 0;
+    width: 240px;
+  }
+  .sonja-image{
+    width: auto;
   }
 }
