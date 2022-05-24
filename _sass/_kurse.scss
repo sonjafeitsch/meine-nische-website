@@ -12,10 +12,10 @@ picture {
 }
 
 .arrow-right:before {
-  content: '→';
+  content: "→";
   font-size: 2em;
   border-radius: 50%;
-  background-color: #EFEAE4;
+  background-color: #efeae4;
   width: 2em;
   height: 2em;
   display: flex;
@@ -50,11 +50,14 @@ picture {
     width: 400px;
     height: 400px;
     overflow: hidden;
-    background-color: $accent;
 
     picture {
       display: block;
-      position: relative
+      position: relative;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

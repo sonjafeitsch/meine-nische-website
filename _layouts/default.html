@@ -1,75 +1,88 @@
-<!doctype html>
-{% assign homeClass = '' %}
-{% if page.permalink == '/' %}
-{%assign homeClass = 'text-important' %}
-{%endif%}
-{% assign studioClass = '' %}
-{% if page.permalink == 'studio' %}
-{%assign studioClass = 'text-important' %}
-{%endif%}
-{% assign kurseClass = '' %}
-{% if page.permalink == 'kurse' %}
-{%assign kurseClass = 'text-important' %}
-{%endif%}
-{% assign kontaktClass = '' %}
-{% if page.permalink == 'kontakt' %}
-  {%assign kontaktClass = 'text-important' %}
-{%endif%}
-{% assign belegungClass = '' %}
-{% if page.permalink == 'belegung' %}
-{%assign belegungClass = 'text-important' %}
-{%endif%}
+<!DOCTYPE html>
+{% assign homeClass = '' %} {% if page.permalink == '/' %} {%assign homeClass =
+'text-important' %} {%endif%} {% assign studioClass = '' %} {% if page.permalink
+== 'studio' %} {%assign studioClass = 'text-important' %} {%endif%} {% assign
+kurseClass = '' %} {% if page.permalink == 'kurse' %} {%assign kurseClass =
+'text-important' %} {%endif%} {% assign kontaktClass = '' %} {% if
+page.permalink == 'kontakt' %} {%assign kontaktClass = 'text-important' %}
+{%endif%} {% assign belegungClass = '' %} {% if page.permalink == 'belegung' %}
+{%assign belegungClass = 'text-important' %} {%endif%}
 <html lang="de">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="styles/reset.css" rel="stylesheet"/>
-  <link href="styles/main.css" rel="stylesheet"/>
-  <link href="styles/navbar.css" rel="stylesheet"/>
-  <link href="styles/footer.css" rel="stylesheet"/>
-  <link href="styles/{{ page.style }}" rel="stylesheet"/>
-</head>
-<body class="h-100 w-100 m-0">
-<label class="menu-opener p-2" for="side-menu"><span class="menu-opener-label">Menü</span></label>
-<header class="navbar">
-  <input class="side-menu" id="side-menu" type="checkbox"/>
-  <div class="navbar-links">
-    <div class="{{ homeClass }}"><a href="..">Startseite</a></div>
-    <div class="{{ studioClass }}"><a href="studio">Das Studio</a></div>
-    <div class="{{ kurseClass }}"><a href="kurse">Workshops & Kurse</a></div>
-    <div class="{{ belegungClass }}"><a href="belegung">Belegung</a></div>
-    <div class="{{ kontaktClass }}"><a href="kontakt">Kontakt</a></div>
-  </div>
-  <span class="button call-to-action">Jetzt Mieten</span>
-</header>
-<div class="main-margin">
-{{ content }}
-</div>
-<footer class="main-margin footer justify-content-between mb-3">
-  <div class="footer-column">
-    <div class="text-highlight themed-text-secondary big-size">Kontakt</div>
-    <div class="text-important">Kreativstudio Meine Nische</div>
-    <div>Sonja Feitsch</div>
-    <div>Zinkhof 1</div>
-    <div>97070 Würzburg</div>
-    <div class="text-important"><a href="mailto:hallo@meine-nische.de">hallo@meine-nische.de</a></div>
-  </div>
-  <div class="footer-column align-items-start">
-    <div class="text-highlight themed-text-secondary big-size">Komm vorbei</div>
-    <div class="mb-4">Schupper mal rein und lerne das Studio bei einem gemütlichen Treffen kennen.</div>
-    <a href="mailto:hallo@meine-nische.de" class="button filled">Termin vereinbaren</a>
-  </div>
-  <div class="footer-column">
-    <div class="text-highlight big-size">Menü</div>
-    <div class="cursor-pointer {{homeClass}}"><a href="..">Startseite</a></div>
-    <div class="cursor-pointer {{studioClass}}"><a href="studio">Das Studio</a></div>
-    <div class="cursor-pointer {{kurseClass}}"><a href="kurse">Workshops & Kurse</a></div>
-    <div class="cursor-pointer {{belegungClass}}"><a href="belegung">Belegung</a></div>
-    <div class="cursor-pointer {{kontaktClass}}"><a href="kontakt">Kontakt</a></div>
-    <div class="cursor-pointer {{kontaktClass}}"><a href="kontakt#datenschutz">Datenschutz</a></div>
-    <div class="cursor-pointer {{kontaktClass}}"><a href="kontakt#impressum">Impressum</a></div>
-  </div>
-</footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/navbar.css" rel="stylesheet" />
+    <link href="styles/footer.css" rel="stylesheet" />
+    <link href="styles/{{ page.style }}" rel="stylesheet" />
+  </head>
+  <body class="h-100 w-100 m-0">
+    <label class="menu-opener p-2" for="side-menu"
+      ><span class="menu-opener-label">Menü</span></label
+    >
+    <header class="navbar">
+      <input class="side-menu" id="side-menu" type="checkbox" />
+      <div class="navbar-links">
+        <div class="{{ homeClass }}"><a href="..">Startseite</a></div>
+        <div class="{{ studioClass }}"><a href="studio">Das Studio</a></div>
+        <div class="{{ kurseClass }}">
+          <a href="kurse">Workshops & Kurse</a>
+        </div>
+        <div class="{{ belegungClass }}"><a href="belegung">Belegung</a></div>
+        <div class="{{ kontaktClass }}"><a href="kontakt">Kontakt</a></div>
+      </div>
+      <span class="button filled call-to-action">Jetzt Mieten</span>
+    </header>
+    <div class="main-margin">{{ content }}</div>
+    <footer class="main-padding footer justify-content-between">
+      <div class="footer-column">
+        <div class="text-highlight themed-text-secondary big-size">Kontakt</div>
+        <div class="text-important">Kreativstudio Meine Nische</div>
+        <div>Sonja Feitsch</div>
+        <div>Zinkhof 1</div>
+        <div>97070 Würzburg</div>
+        <div class="text-important">
+          <a href="mailto:hallo@meine-nische.de">hallo@meine-nische.de</a>
+        </div>
+      </div>
+      <div class="footer-column align-items-start">
+        <div class="text-highlight themed-text-secondary big-size">
+          Komm vorbei
+        </div>
+        <div class="mb-4">
+          Schupper mal rein und lerne das Studio bei einem gemütlichen Treffen
+          kennen.
+        </div>
+        <a href="mailto:hallo@meine-nische.de" class="button filled"
+          >Termin vereinbaren</a
+        >
+      </div>
+      <div class="footer-column">
+        <div class="text-highlight big-size">Menü</div>
+        <div class="cursor-pointer {{homeClass}}">
+          <a href="..">Startseite</a>
+        </div>
+        <div class="cursor-pointer {{studioClass}}">
+          <a href="studio">Das Studio</a>
+        </div>
+        <div class="cursor-pointer {{kurseClass}}">
+          <a href="kurse">Workshops & Kurse</a>
+        </div>
+        <div class="cursor-pointer {{belegungClass}}">
+          <a href="belegung">Belegung</a>
+        </div>
+        <div class="cursor-pointer {{kontaktClass}}">
+          <a href="kontakt">Kontakt</a>
+        </div>
+        <div class="cursor-pointer {{kontaktClass}}">
+          <a href="kontakt#datenschutz">Datenschutz</a>
+        </div>
+        <div class="cursor-pointer {{kontaktClass}}">
+          <a href="kontakt#impressum">Impressum</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

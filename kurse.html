@@ -4,35 +4,41 @@ title: Meine Nische | Kurse
 style: kurse.css
 permalink: kurse
 events:
-  - name: Sprech- und Stimmtraining
-    time: 30. April 2022 – 13 bis 10 Uhr
-    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-    address: hallo@stimmtraining.de
-  - name: "Watercolor Workshop: Pure & Simple"
-    time: 27.Mai 2022 – 18 bis 22 Uhr
-    description: Du denkst du kannst nicht malen? Dann ist dieser Workshop genau für dich. Hier geht es nicht um konkrete Motive, sondern nur um einfache aber wunderschöne Formen mit Aquarellfarben. Daher vergiss deine Hemmungen und sei dabei.
+  - name: "Massagen & Geführte Meditationen"
+    time: Termine individuell nach Vereinbarung.
+    description: Treat Yourself Like Someone You Love – Die liebe Jana von Relax & Meditate bietet für dich Wellnessmassagen und geführte Meditationen in der Nische an.
+    address: jana.grub@relaxandmeditate.com
+    image: jana.png
+    homepage: relaxandmeditate.de
+  - name: "Watercolor Greenery"
+    time: 11. Juni 2022 – 15 bis 17 Uhr
+    description: Du magst Pflanzen und Aquarellfarben? Dann ist dieser Workshop perfekt für dich. Sonja von "Aquarell von Naturell" zeigt dir verschiedene Tipps & Tricks zur Illustration von deinen Lieblingspflanzen mit Aquarellfarben. Mit Hilfe dieser Techniken illustrieren wir Pilea, Monstera & Co.
     address: sonja@aquarellvonnaturell.de
+    image: watercolorGreenery.png
+    homepage: aquarellvonnaturell.de
 ---
 
 <article class="flex-responsive flex-gap-4">
   <div class="studio-card">
-    <div class="text-highlight themed-text big-size">
-      Veranstaltungen
+    <div class="text-highlight themed-text big-size">Veranstaltungen</div>
+    <div>
+      Du möchtest Dir etwas Gutes tun? Dich bei einer Yoga-Stunde entspannen?
+      Oder bei einem kreativen Workshop fernab vom Bildschirm wieder etwas mit
+      den eigenen Händen machen?
     </div>
     <div>
-      Du möchtest Dir etwas Gutes tun? Dich bei einer Yoga-Stunde entspannen? Oder bei einem kreativen Workshop fernab
-      vom Bildschirm wieder etwas mit den eigenen Händen machen?
-    </div>
-    <div>Dann besuche eine der wundervolle Veranstaltungen in
-      der Nische. Hier findest du alle Events, die aktuell stattfinden.
+      Dann besuche eine der wundervolle Veranstaltungen in der Nische. Hier
+      findest du alle Events, die aktuell stattfinden.
     </div>
   </div>
   <div class="studio-card align-items-center">
     <div class="keyhole-image">
       <picture>
-        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
-        <img alt="Teaser für Kurse"
-             src="images/stift_500w.png"/>
+        <source
+          media="(max-width: {{ site.mobile_breakpoint }})"
+          srcset="blank.png"
+        />
+        <img alt="Teaser für Kurse" src="images/stift_500w.png" />
       </picture>
     </div>
   </div>
@@ -41,24 +47,30 @@ events:
 {% for event in page.events %}
 <article class="flex-responsive flex-gap-4">
   <div class="studio-card">
-    <div class="text-highlight big-size themed-text-secondary">
+    <div class="text-highlight big-size themed-text-secondary mb-3">
       {{ event.name }}
     </div>
-    <div class="text-important">
-      {{ event.time }}
-    </div>
-    <div>{{event.description}}</div>
+    <div class="text-important">{{ event.time }}</div>
+    <div class="mb-3">{{event.description}}</div>
     <div class="d-flex align-items-center flex-gap-3">
       <span class="arrow-right"></span>
-      <div><div>Infos und Anmeldung unter</div><div class="text-important">{{event.address}}</div></div>
+      <div>
+        <div>Infos und Anmeldung unter</div>
+        <div class="text-important">{{event.address}}</div>
+        <div>
+          Homepage: <a href="https://{{event.homepage}}">{{event.homepage}}</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="studio-card align-items-center">
     <div class="event-image">
       <picture>
-        <source media="(max-width: {{ site.mobile_breakpoint }})" srcset="blank.png">
-        <img alt="Teaser für Kurse"
-             src="images/events/{{event.image}}"/>
+        <source
+          media="(max-width: {{ site.mobile_breakpoint }})"
+          srcset="blank.png"
+        />
+        <img alt="Teaser für Kurse" src="images/events/{{event.image}}" />
       </picture>
     </div>
   </div>
