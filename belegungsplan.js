@@ -77,7 +77,7 @@ function fillCell(course, idPrefix) {
       element.innerHTML += "<br/>" + course.name;
       element.style = "color: red";
     } else {
-      if (course.link.length > 0) {
+      if (course.link && course.link.length > 0) {
         element.innerHTML =
           "<td><a href=" + course.link + ">" + course.name + "</a></td>";
       } else {
