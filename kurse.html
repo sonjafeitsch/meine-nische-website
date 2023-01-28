@@ -4,6 +4,17 @@ title: Meine Nische | Kurse
 style: kurse.css
 permalink: kurse
 events:
+  - name: Deine Verbindung von Kopf-Herz-Bauch
+    time: Workshop-Reihe im März, immer Dienstag von 16:30 – 17:30
+    description: "Du läufst oft verkopft durch die Welt? Bist gestresst?
+    Wünschst Du Dir eine bessere Verbindung zu Dir?
+    Zu Deinen Gefühlen und Deiner Intuition?
+    In geschlossener Gruppe erforschen wir über 4 Wochen die Verbindung zu uns selbst.
+    Erleben sie. Stärken sie. Diese Workshopreihe findet mit Hypnose Life Coach Kai Morawietz statt."
+    costs: "60 Euro pro Teilnehmer*in"
+    image: kai.png
+    link: "https://meine-nische.de/kurse/kopfHerzBauch.pdf" 
+    address: kai.morawietz@mail.de
   - name: "Yoga für Kraft und Dynamik: Power Yoga"
     time: Schnupperstunde am Freitag, den 10.02 von 18 – 19 Uhr
     description: "Bist du bereit, deine Komfortzone zu verlassen und ins schwitzen zu kommen?
@@ -99,6 +110,8 @@ events:
     </div>
     {% if event.costs %}
     <div><span class="text-important">Kosten: </span>{{ event.costs }}</div>
+    {% endif %} {% if event.link %}
+    <div class="mt-3"><a target="_blank" href="{{ event.link }}"">Hier geht es zum Workshop-Flyer</a></div>
     {% endif %}
     <div class="d-flex align-items-center flex-gap-3 mt-3">
       <span class="arrow-right"></span>
