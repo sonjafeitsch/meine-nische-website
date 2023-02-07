@@ -4,7 +4,7 @@ title: Meine Nische | Kontakt
 style: studio.css
 permalink: kontakt
 ---
-
+<script src="3rdparty/jquery-3.6.3.min.js"></script>
 <article class="flex-responsive flex-gap-4">
   <div class="d-flex flex-column flex-gap-4" style="min-width: 300px">
     <h1 class="text-highlight huge-size themed-text">
@@ -14,6 +14,30 @@ permalink: kontakt
       Du hast Fragen rund um die Nische? Dann schreibe mir einfach eine E-Mail oder nimm über Instagram mit mir Kontakt
       auf. Ich freue mich dich kennenzulernen.
     </div>
+    <div id="zammad-feedback-form">form will be placed in here</div>
+
+    <script id="zammad_form_script" src="https://meine-nische.zammad.com/assets/form/form.js"></script>
+
+    <script>
+      $(function() {
+        $('#zammad-feedback-form').ZammadForm({
+          agreementMessage: 'Ich hab\' die Datenschutzhinweise unten gelesen<br>',
+          messageTitle: 'Deine Anfrage',
+          messageSubmit: 'SENDEN',
+          messageThankYou: 'Danke für deine Anfrage! Wir werden dir in den nächsten Tagen antworten.',
+        });
+        // this is very hacky but it does the job for now, anyway
+        setTimeout(() => {
+          $('.js-noConfig')?.text('')
+        }, 500)
+        $('#zammad-form-name-inline').attr('placeholder', '')
+        $('#zammad-form-email-inline').attr('placeholder', '')
+        $('#zammad-form-body-inline').attr('placeholder', '')
+        $('#zammad-form-body-inline').css('resize', 'vertical')
+        $('.zammad-form > button').addClass("button")
+        $('.zammad-form > button').css('margin-left','calc(100% - 95px)')
+      });
+    </script>
     <div>
       E-Mail: hallo@meine-nische.de
     </div>
