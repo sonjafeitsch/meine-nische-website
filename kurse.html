@@ -4,9 +4,19 @@ title: Meine Nische | Kurse
 style: kurse.css
 permalink: kurse
 events:
+  - name: "Sound Bath - Komm zur Klangmeditation"
+    time: "Donnerstag, 22. Juli von 20 – 21 Uhr"
+    image: soundBath.png
+    description: "Die heilsame und zentrierende Wirkung von Klang und Musik ist seit Jahrtausenden in allen Kulturen der Menschheit bekannt.
+    In diesem Event bekommst du die Erlaubnis, dich für eine Stunde ganz fallenzulassen und hinzugeben. Du bist eingeladen, den verschiedenen Tönen, Klängen und Geräuschen zu lauschen, die dich in der Tiefe deines Seins berühren, zentrieren und dein Nervensystem in Balance bringen.
+    Dich erwartet eine tief meditative, entspannende Klangreise mit verschiedenen Instrumenten.
+    Es sind keinerlei Kenntnisse oder Fähigkeiten vonnöten, du darfst hier ganz loslassen und empfangen. Bitte bringe bequeme Kleidung, eine Trinkflasche und ein kleines Kopfkissen mit."
+    address: "felixvogelyoga@gmail.com"
+    costs: "20 - 30 € – du entscheidest, wie viel du geben kannst und willst (bezahlt wird vor Ort in bar)"
+    link: https://www.eventbrite.de/e/677354404257
   - name: "Women Circle – Weiblichkeit"
     image: womenCircle.png
-    time: Sonntag, 23. Juli von 17 – 19 Uhr
+    time: Sonntag, 27. August von 17 – 19 Uhr
     description: "Im geschützen Rahmen, gemeinsam unter Frauen wollen wir uns mehr mit unserer Weiblichkeit verbinden und tiefer eintauchen. 
     Mit Hilfe von Kakao, Reiki, Meditation und dem Ausdruck unseres wahren Selbst, wollen wir unser Feuer der Weiblichkeit wieder erwecken, unsere Intuition stärken und alte Glaubenssätze auflösen.
     Für einen sicheren Raum und Austausch wird die Teilnehmerzahl auf 5-6 Personen begrenzt. Bitte zieh bequeme Kleidung an und bring dein Notizbuch mit."
@@ -90,7 +100,7 @@ events:
     {% if event.costs %}
     <div><span class="text-important">Kosten: </span>{{ event.costs }}</div>
     {% endif %} {% if event.link %}
-    <div class="mt-3"><a target="_blank" href="{{ event.link }}"">Hier geht es zum Workshop-Flyer</a></div>
+    <div class="mt-3"><a target="_blank" href="{{ event.link }}"">Hier geht es zur Anmeldung</a></div>
     {% endif %}
     <div class="d-flex align-items-center flex-gap-3 mt-3">
       <span class="arrow-right"></span>
