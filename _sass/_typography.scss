@@ -8,14 +8,15 @@
   border-radius: 50px;
 }
 
-.button.filled, .button:hover {
+.button.filled,
+.button:hover {
   background-color: $accent;
   color: white;
 }
 
 .button.filled:hover {
   background-color: $bright-background;
-  color: $accent
+  color: $accent;
 }
 
 .button:disabled {
@@ -43,7 +44,7 @@
   color: $color-navbar;
 }
 .themed-text-secondary {
-  color: $accent-secondary
+  color: $accent-secondary;
 }
 
 .text-highlight {
@@ -69,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: $accent-secondary
+  color: $accent-secondary;
 }
 
 .text-important {
@@ -78,4 +79,8 @@ a:hover {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.word-break-all {
+  word-break: break-all;
 }

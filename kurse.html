@@ -4,16 +4,6 @@ title: Meine Nische | Kurse
 style: kurse.css
 permalink: kurse
 events:
-  - name: "The Inner Garden – Eine Reise durch deine Sinne"
-    image: lorena.png
-    time: Sonntag, 1. Juni von 10:30 bis 12 Uhr
-    description: "Dieser Workshop ist eine Einladung, dich wieder mit dir selbst zu verbinden – auf eine warme, 
-    kreative und berührende Weise. Tauche ein in eine außergewöhnliche Meditationsreise, die dich mit 
-    bewusst gestalteten Sinnesritualen in den Moment holt: wärmender Kakao auf deiner Zunge, 
-    schwebende Klänge, zarte Düfte, visuelle Ruhepole und sanfte Berührungen. 
-    Du wirst getragen von deiner eigenen Wahrnehmung und meiner Stimme. Für alle, die sich nach Ruhe sehnen, aber nicht wissen, wie so anfangen sollen."
-    costs: "15 – 20 € (zahle so viel du kannst und möchtest)"
-    address: "Lorena Ziegler // Anmeldung an klangweich@web.de"
   - name: "Kreativ Workshop"
     image: irina.png
     time: Samstag, 21. Juni von 13 bis 16 Uhr
@@ -24,7 +14,7 @@ events:
     Ein Kunstwerk, das du mitnehmen kannst und das dich zu Hause jeden Tag inspiriert. In einer kleinen Gruppe von maximal 12 Menschen. Persönlich und Echt.
     Ich lade dich ein, komm mit. 💙"
     costs: "49 € (inkl. Material und Snacks)"
-    homepage: "https://creerdesign.com/workshop/kreativworkshop"
+    homepage: creerdesign.com/workshop/kreativworkshop
   - name: "Abnehmen beginnt im Kopf! – Mit Hypnose, Mentaltraining & Breathwork entspannt zum Wohlfühlkörper"
     image: mia.png
     time: Kickoff-Nachmittag am 28. Juni von 14 – 18 Uhr und dann Freitags im Juli von 19 – 20:30 Uhr
@@ -37,8 +27,8 @@ events:
       Fühlen und Handeln. Du lernst, wie du mit Leichtigkeit gesunde Entscheidungen triffst, neue Gewohnheiten entwickelst, 
       die wirklich zu dir passen, aufhörst, gegen dich zu kämpfen und beginnst, mit dir zu arbeiten. 
       Schritt für Schritt zu deinem Wohlfühl-Körper."
-    address: "Michaela Schmitz // Anmeldung an hallo@michaelaschmitz.com"
-    homepage: "www.michaelaschmitz.com"
+    address: Michaela Schmitz // Anmeldung an hallo@michaelaschmitz.com
+    homepage: michaelaschmitz.com
     costs: "279 € für 10 Stunden Gruppencoaching, alle Kursmaterialien mit Übungen und eine Audiodatei mit Hypnose für zu Hause"
   - name: "Yoga Community"
     image: yogaCommunity.png
@@ -46,7 +36,7 @@ events:
     description: "Unser Wissen frisch von der Ausbildung auf Deine Matte: Wir verbinden vielfältige Tools aus Atem, 
     Bewegung und Meditation zu einer liebevollen Praxis. Lerne Dich und neue Yogi:nis kennen."
     costs: "12 € / Einheit"
-    address: "Analena, Bianca und Christina // yogacommunitywue@gmail.com"
+    address: Analena, Bianca und Christina // yogacommunitywue@gmail.com
   - name: "Yoga & Henna"
     image: ninaHenna.png
     time: Sonntag, 6. Juli von 10 bis 12 Uhr
@@ -169,9 +159,9 @@ events:
       <span class="arrow-right"></span>
       <div>
         <div>Infos und Anmeldung unter</div>
-        <div class="text-important">{{event.address}}</div>
+        <div class="text-important word-break-all">{{event.address}}</div>
         {% if event.homepage %}
-        <div>
+        <div class="word-break-all">
           Homepage: <a href="https://{{event.homepage}}">{{event.homepage}}</a>
         </div>
         {% endif %}
