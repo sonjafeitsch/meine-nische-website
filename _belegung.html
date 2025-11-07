@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+         
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belegungsplan - Kreativstudio Meine Nische | Sonja Feitsch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meine Nische – Kreativstudio in Würzburg | Liebevolles Studio für Workshops, Kurse und Veranstaltungen | Komm' vorbei und lerne die Nische kennen."
+    />
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/navbar.css" rel="stylesheet" />
+    <link href="styles/footer.css" rel="stylesheet" />
+    <link href="styles/belegung.css" rel="stylesheet" />
+  </head>
+  <body class="h-100 w-100 m-0">
+    <label class="menu-opener p-2" for="side-menu"
+      ><span class="menu-opener-label">Menü</span></label
+    >
+    <header class="navbar">
+      <input class="side-menu" id="side-menu" type="checkbox" />
+      <div class="navbar-links">
+        <div class=""><a href="..">Startseite</a></div>
+        <div class=""><a href="studio">Das Studio</a></div>
+        <div class="">
+          <a href="kurse">Workshops & Kurse</a>
+        </div>
+        <!-- <div class=""><a href="belegung">Belegung</a></div> -->
+        <div class=""><a href="kontakt">Kontakt</a></div>
+      </div>
+      <a
+        class="button filled call-to-action"
+        href="mailto:hallo@meine-nische.de"
+        >Jetzt Mieten</a
+      >
+    </header>
+    <div class="main-margin"><article class="d-flex flex-column flex-gap-4">
+  <h1 class="themed-text huge-size text-highlight mb-4">Belegungsplan</h1>
+  <section>
+    Der Plan gibt die reservierten Kurszeiten an, jeder Kurs entscheidet aber
+    selbst, ob er tatsächlich stattfindet oder wegen Ferien, Krankheit oder
+    ähnlichem kurzfristig ausfällt. Falls du in einen Kurs hineinschnuppern
+    möchtest, kontaktiere am Besten vorher den Kursleiter, ob der Kurs auch
+    wirklich stattfindet.
+  </section>
+  <div class="d-flex justify-content-end flex-gap-2 align-items-center">
+    <span id="schedule-start"></span> –
+    <span id="schedule-end"></span>
+    <button class="button" id="previous-week-button" disabled>Zurück</button>
+    <button class="button" id="next-week-button">Vor</button>
+  </div>
+  <table class="w-100">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Montag</th>
+        <th>Dienstag</th>
+        <th>Mittwoch</th>
+        <th>Donnerstag</th>
+        <th>Freitag</th>
+        <th>Samstag</th>
+        <th>Sonntag</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>8:00 – 9:00</td>
+      <td id="monday-8"></td>
+      <td id="tuesday-8"></td>
+      <td id="wednesday-8"></td>
+      <td id="thursday-8"></td>
+      <td id="friday-8"></td>
+      <td id="saturday-8"></td>
+      <td id="sunday-8"></td>
+    </tr>
+    <tr>
+      <td>9:00 – 10:00</td>
+      <td id="monday-9"></td>
+      <td id="tuesday-9"></td>
+      <td id="wednesday-9"></td>
+      <td id="thursday-9"></td>
+      <td id="friday-9"></td>
+      <td id="saturday-9"></td>
+      <td id="sunday-9"></td>
+    </tr>
+    <tr>
+      <td>10:00 – 11:00</td>
+      <td id="monday-10"></td>
+      <td id="tuesday-10"></td>
+      <td id="wednesday-10"></td>
+      <td id="thursday-10"></td>
+      <td id="friday-10"></td>
+      <td id="saturday-10"></td>
+      <td id="sunday-10"></td>
+    </tr>
+    <tr>
+      <td>11:00 – 12:00</td>
+      <td id="monday-11"></td>
+      <td id="tuesday-11"></td>
+      <td id="wednesday-11"></td>
+      <td id="thursday-11"></td>
+      <td id="friday-11"></td>
+      <td id="saturday-11"></td>
+      <td id="sunday-11"></td>
+    </tr>
+    <tr>
+      <td>12:00 – 13:00</td>
+      <td id="monday-12"></td>
+      <td id="tuesday-12"></td>
+      <td id="wednesday-12"></td>
+      <td id="thursday-12"></td>
+      <td id="friday-12"></td>
+      <td id="saturday-12"></td>
+      <td id="sunday-12"></td>
+    </tr>
+    <tr>
+      <td>13:00 – 14:00</td>
+      <td id="monday-13"></td>
+      <td id="tuesday-13"></td>
+      <td id="wednesday-13"></td>
+      <td id="thursday-13"></td>
+      <td id="friday-13"></td>
+      <td id="saturday-13"></td>
+      <td id="sunday-13"></td>
+    </tr>
+    <tr>
+      <td>14:00 – 15:00</td>
+      <td id="monday-14"></td>
+      <td id="tuesday-14"></td>
+      <td id="wednesday-14"></td>
+      <td id="thursday-14"></td>
+      <td id="friday-14"></td>
+      <td id="saturday-14"></td>
+      <td id="sunday-14"></td>
+    </tr>
+    <tr>
+      <td>15:00 – 16:00</td>
+      <td id="monday-15"></td>
+      <td id="tuesday-15"></td>
+      <td id="wednesday-15"></td>
+      <td id="thursday-15"></td>
+      <td id="friday-15"></td>
+      <td id="saturday-15"></td>
+      <td id="sunday-15"></td>
+    </tr>
+    <tr>
+      <td>16:00 – 17:00</td>
+      <td id="monday-16"></td>
+      <td id="tuesday-16"></td>
+      <td id="wednesday-16"></td>
+      <td id="thursday-16"></td>
+      <td id="friday-16"></td>
+      <td id="saturday-16"></td>
+      <td id="sunday-16"></td>
+    </tr>
+    <tr>
+      <td>17:00 – 18:00</td>
+      <td id="monday-17"></td>
+      <td id="tuesday-17"></td>
+      <td id="wednesday-17"></td>
+      <td id="thursday-17"></td>
+      <td id="friday-17"></td>
+      <td id="saturday-17"></td>
+      <td id="sunday-17"></td>
+    </tr>
+    <tr>
+      <td>18:00 – 19:00</td>
+      <td id="monday-18"></td>
+      <td id="tuesday-18"></td>
+      <td id="wednesday-18"></td>
+      <td id="thursday-18"></td>
+      <td id="friday-18"></td>
+      <td id="saturday-18"></td>
+      <td id="sunday-18"></td>
+    </tr>
+    <tr>
+      <td>19:00 – 20:00</td>
+      <td id="monday-19"></td>
+      <td id="tuesday-19"></td>
+      <td id="wednesday-19"></td>
+      <td id="thursday-19"></td>
+      <td id="friday-19"></td>
+      <td id="saturday-19"></td>
+      <td id="sunday-19"></td>
+    </tr>
+    <tr>
+      <td>20:00 – 21:00</td>
+      <td id="monday-20"></td>
+      <td id="tuesday-20"></td>
+      <td id="wednesday-20"></td>
+      <td id="thursday-20"></td>
+      <td id="friday-20"></td>
+      <td id="saturday-20"></td>
+      <td id="sunday-20"></td>
+    </tr>
+    <tr>
+      <td>21:00 – 22:00</td>
+      <td id="monday-21"></td>
+      <td id="tuesday-21"></td>
+      <td id="wednesday-21"></td>
+      <td id="thursday-21"></td>
+      <td id="friday-21"></td>
+      <td id="saturday-21"></td>
+      <td id="sunday-21"></td>
+    </tr>
+  </table>
+</article>
+
+<script src="dayjs/dayjs.min.js"></script>
+<script src="dayjs/isoWeek.min.js"></script>
+
+<script defer src="belegungsplan.js"></script>
+</div>
+    <footer class="main-padding footer justify-content-between">
+      <div class="footer-column">
+        <div class="text-highlight themed-text-secondary big-size">Kontakt</div>
+        <div class="text-important">Kreativstudio Meine Nische</div>
+        <div>Sonja Feitsch</div>
+        <div>Zinkhof 1</div>
+        <div>97070 Würzburg</div>
+        <div class="text-important">
+          <a href="mailto:hallo@meine-nische.de">hallo@meine-nische.de</a>
+        </div>
+      </div>
+      <div class="footer-column align-items-start">
+        <div class="text-highlight themed-text-secondary big-size">
+          Komm vorbei
+        </div>
+        <div class="mb-4">
+          Schupper mal rein und lerne das Studio bei einem gemütlichen Treffen
+          kennen.
+        </div>
+        <a href="mailto:hallo@meine-nische.de" class="button filled"
+          >Termin vereinbaren</a
+        >
+      </div>
+      <div class="footer-column">
+        <div class="text-highlight big-size">Menü</div>
+        <div class="cursor-pointer ">
+          <a href="..">Startseite</a>
+        </div>
+        <div class="cursor-pointer ">
+          <a href="studio">Das Studio</a>
+        </div>
+        <div class="cursor-pointer ">
+          <a href="kurse">Workshops & Kurse</a>
+        </div>
+        <div class="cursor-pointer ">
+          <a href="kontakt">Kontakt</a>
+        </div>
+        <div class="cursor-pointer ">
+          <a href="kontakt#datenschutz">Datenschutz</a>
+        </div>
+        <div class="cursor-pointer ">
+          <a href="kontakt#impressum">Impressum</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
