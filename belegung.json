@@ -1,0 +1,72 @@
+[
+  {
+    "day": "tuesday",
+    "start": 18,
+    "end": 20,
+    "name": "Yoga",
+    "link": ""
+  },
+  {
+    "day": "wednesday",
+    "start": 12,
+    "end": 13,
+    "name": "Rückbildung",
+    "link": "https://www.rückbildung-würzburg.de/Kursinformationen/"
+  },
+  {
+    "day": "wednesday",
+    "start": 17,
+    "end": 19,
+    "name": "Rückbildung",
+    "link": "https://www.rückbildung-würzburg.de/Kursinformationen/"
+  },
+  {
+    "day": "wednesday",
+    "start": 20,
+    "end": 22,
+    "name": "Meditationsgruppe",
+    "link": ""
+  },
+  {
+    "day": "thursday",
+    "start": 18,
+    "end": 20,
+    "name": "Qi Gong Anfängerkurs",
+    "link": ""
+  },
+  {
+    "day": "2022-06-11",
+    "start": 15,
+    "end": 17,
+    "name": "Watercolor Greenery",
+    "link": ""
+  },
+  {
+    "day": "2022-06-14",
+    "start": 11,
+    "end": 13,
+    "name": "Private Vermietung",
+    "link": ""
+  },
+  {
+    "day": "2022-06-18",
+    "start": 13,
+    "end": 15,
+    "name": "Private Vermietung",
+    "link": ""
+  },
+  {
+    "day": "2022-07-03",
+    "start": 11,
+    "end": 15,
+    "name": "Private Vermietung",
+    "link": ""
+  },
+  {
+    "day": "2022-07-09",
+    "start": 17,
+    "end": 24,
+    "name": "Sommerfest",
+    "link": ""
+  }
+]
