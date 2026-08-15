@@ -14,8 +14,9 @@ events:
     costs: "89 € pro Kind"
     address: "Stephanie Naebers // 0171 5324975 // stephanie.naebers@gmail.com"
   - name: "Yoga mit Herz – Fließend zwischen Hatha und Vinyasa"
+    subdescription: Meine Yogastunden sind ein wertfreier Raum voller Herz, in dem körperliche Stärke, Achtsamkeit und menschliche Verbundenheit zusammenfinden.
     image: caro.png
-    time: Dienstags von 19:45 bis 21:30 Uhr (ab September 2026)
+    time: Dienstags von 19:45 bis 21 Uhr (ab September 2026)
     description: "Ein wertfreier Raum voller Herz, Achtsamkeit und körperlicher Stärke kann zu einem Ort werden, 
     an dem innere und äußere Balance sowie echtes Wohlbefinden entstehen. Hier begegnen sich Menschen 
     in einer Atmosphäre von Respekt und Offenheit – getragen von dem Gefühl, willkommen zu sein und sich ohne 
@@ -37,6 +38,18 @@ events:
     Du musst nichts tun, nichts leisten, nichts 'richtig' machen – du darfst einfach empfangen. Lausche den Klängen, nimm wahr, was entsteht, und schenke dir eine Stunde, in der nichts von dir verlangt wird."
     costs: "20 € pro Person"
     address: "Annika Greif // 0491 5902139211 // annikagreif@outlook.de"
+  - name: "Herbst-Workshop Pilze"
+    image: dominika.png
+    time:  Samstag, 26. September von 13:15 – 15:45 Uhr
+    description: "Im Herbst sprießen die Pilze nicht nur im Wald, sondern auch auf unserem Aquarellpapier! 🍄 
+    In diesem Workshop gestaltest du dein ganz eigenes Pilzbouquet: verspielt, geheimnisvoll, farbenfroh oder ein 
+    kleines bisschen seltsam. Anders als bei meinen bisherigen Workshops gibt es diesmal kein 
+    fest vorgegebenes Motiv. Stattdessen bringe ich verschiedene Pilzformen und Gestaltungsideen mit, aus 
+    denen du deine persönliche Komposition zusammenstellen kannst.
+    So entsteht Schritt für Schritt ein individuelles Pilzkunstwerk, das garantiert kein zweites Mal genauso aussieht."
+    costs: "60 € pro Person (inkl. Material)"
+    address: "Dominika Heublein-Behrens // mail@ominia-art.de"
+    homepage: "ominia-art.de/produkt/herbst-workshop-pilze/"
   - name: "Psychologische und Systemische Beratung"
     image: julia.png
     time:  Auf Anfrage
@@ -110,10 +123,10 @@ events:
     </div>
     <div class="d-flex flex-column flex-gap-2">
       <div class="text-important">{{ event.time }}</div>
-      <div>{{event.description}}</div>
       {% if event.subdescription %}
       <div>{{ event.subdescription }}</div>
       {% endif %}
+      <div>{{event.description}}</div>
     </div>
     {% if event.costs %}
     <div><span class="text-important">Kosten: </span>{{ event.costs }}</div>
