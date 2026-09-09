@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "navbar.css",
+	"sources": [
+		"navbar.scss",
+		"_sass/_variables.scss",
+		"_sass/_navbar.scss"
+	],
+	"sourcesContent": [
+		"$mobile-breakpoint: 920px;\n@import \"variables\";\n@import \"navbar\";\n",
+		"$color-navbar: #efeae4;\n$accent: #A3B6A0;\n$accent-secondary: #c18d6e;\n$bright-background: #fffcf6;\n$text-color: #5E6860;\n$color-image-frame: #A3B6A0;\n\n$mobile-resolution: 120dpi;\n",
+		".navbar {\n  background-color: white;\n  height: auto;\n  position: fixed;\n  z-index: 500;\n  right: 0;\n  left: 0;\n  span {\n    cursor: pointer;\n  }\n\n  input {\n    display: none;\n  }\n}\n\n.menu-opener {\n  cursor: pointer;\n  display: block;\n  top: 10px;\n  right: 10px;\n  position: absolute;\n  z-index: 1000;\n}\n\n.navbar-links {\n  line-height: 1.5em;\n  opacity: 0;\n  max-height: 0;\n  overflow: hidden;\n  span {\n    padding-left: 5px;\n    padding-right: 5px;\n  }\n}\n\n.call-to-action {\n  display: none !important;\n}\n\n#side-menu:checked ~ .navbar-links {\n  background-color: $color-navbar !important;\n  opacity: 1 !important;\n  max-height: 600px;\n  padding: 1em 3em;\n}\n\n.menu-opener {\n  position: fixed;\n  background-color: rgba(255, 255, 255, 0.8);\n}\n\n@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {\n  .navbar {\n    padding-left: 16.5% !important;\n    padding-right: 16.5% !important;\n    background-color: $color-navbar;\n    height: 70px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  }\n\n  .navbar-links {\n    font-size: 1em;\n    line-height: 1.5em;\n    display: flex;\n    gap: 16px;\n    max-height: 300px;\n    opacity: 1;\n    padding: 0;\n  }\n\n  .call-to-action {\n    display: flex !important;\n  }\n\n  .menu-opener {\n    display: none;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,OAAO,AAAC,CACN,gBAAgB,CAAE,KAAK,CACvB,MAAM,CAAE,IAAI,CACZ,QAAQ,CAAE,KAAK,CACf,OAAO,CAAE,GAAG,CACZ,KAAK,CAAE,CAAC,CACR,IAAI,CAAE,CAAC,CAQR,AAdD,AAOE,OAPK,CAOL,IAAI,AAAC,CACH,MAAM,CAAE,OAAO,CAChB,AATH,AAWE,OAXK,CAWL,KAAK,AAAC,CACJ,OAAO,CAAE,IAAI,CACd,AAGH,AAAA,YAAY,AAAC,CACX,MAAM,CAAE,OAAO,CACf,OAAO,CAAE,KAAK,CACd,GAAG,CAAE,IAAI,CACT,KAAK,CAAE,IAAI,CACX,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,IAAI,CACd,AAED,AAAA,aAAa,AAAC,CACZ,WAAW,CAAE,KAAK,CAClB,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,CAAC,CACb,QAAQ,CAAE,MAAM,CAKjB,AATD,AAKE,aALW,CAKX,IAAI,AAAC,CACH,YAAY,CAAE,GAAG,CACjB,aAAa,CAAE,GAAG,CACnB,AAGH,AAAA,eAAe,AAAC,CACd,OAAO,CAAE,eAAe,CACzB,AAED,AAAA,UAAU,CAAC,OAAO,CAAG,aAAa,AAAC,CACjC,gBAAgB,CDzCH,OAAO,CCyCY,UAAU,CAC1C,OAAO,CAAE,YAAY,CACrB,UAAU,CAAE,KAAK,CACjB,OAAO,CAAE,OAAO,CACjB,AAED,AAAA,YAAY,AAAC,CACX,QAAQ,CAAE,KAAK,CACf,gBAAgB,CAAE,qBAAwB,CAC3C,AAED,MAAM,2DACJ,CAAA,AAAA,OAAO,AAAC,CACN,YAAY,CAAE,gBAAgB,CAC9B,aAAa,CAAE,gBAAgB,CAC/B,gBAAgB,CDxDL,OAAO,CCyDlB,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,CAC9B,WAAW,CAAE,MAAM,CACpB,AAED,AAAA,aAAa,AAAC,CACZ,SAAS,CAAE,GAAG,CACd,WAAW,CAAE,KAAK,CAClB,OAAO,CAAE,IAAI,CACb,GAAG,CAAE,IAAI,CACT,UAAU,CAAE,KAAK,CACjB,OAAO,CAAE,CAAC,CACV,OAAO,CAAE,CAAC,CACX,AAED,AAAA,eAAe,AAAC,CACd,OAAO,CAAE,eAAe,CACzB,AAED,AAAA,YAAY,AAAC,CACX,OAAO,CAAE,IAAI,CACd,CAlBA"
+}

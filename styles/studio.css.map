@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "studio.css",
+	"sources": [
+		"studio.scss",
+		"_sass/_variables.scss",
+		"_sass/_studio.scss"
+	],
+	"sourcesContent": [
+		"$mobile-breakpoint: 920px;\n@import \"variables\";\n@import \"studio\";\n",
+		"$color-navbar: #efeae4;\n$accent: #A3B6A0;\n$accent-secondary: #c18d6e;\n$bright-background: #fffcf6;\n$text-color: #5E6860;\n$color-image-frame: #A3B6A0;\n\n$mobile-resolution: 120dpi;\n",
+		".keyhole-image-container {\n  width: 100%;\n  margin-bottom: 32px;\n}\n\n.keyhole-image {\n  width: 100%;\n  overflow: hidden;\n  border-radius: 999px 999px 0 0;\n}\n\nli:before {\n  content: '';\n  min-width: 10px;\n  display: inline-block;\n  height: 10px;\n  background-color: $accent-secondary;\n  border-radius: 50%;\n  margin-right: 5px;\n  margin-bottom: 0.12em;\n}\n\n.sonja-image {\n  width: 100%;\n}\n\n@media screen and (min-width: $mobile-breakpoint) and (max-resolution: $mobile-resolution) {\n  .keyhole-image-container {\n    width: 240px;\n  }\n\n  .keyhole-image {\n    overflow: hidden;\n    border-radius: 120px 120px 0 0;\n    width: 240px;\n  }\n  .sonja-image{\n    width: auto;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,wBAAwB,AAAC,CACvB,KAAK,CAAE,IAAI,CACX,aAAa,CAAE,IAAI,CACpB,AAED,AAAA,cAAc,AAAC,CACb,KAAK,CAAE,IAAI,CACX,QAAQ,CAAE,MAAM,CAChB,aAAa,CAAE,eAAe,CAC/B,AAED,AAAA,EAAE,CAAC,MAAM,AAAC,CACR,OAAO,CAAE,EAAE,CACX,SAAS,CAAE,IAAI,CACf,OAAO,CAAE,YAAY,CACrB,MAAM,CAAE,IAAI,CACZ,gBAAgB,CDdC,OAAO,CCexB,aAAa,CAAE,GAAG,CAClB,YAAY,CAAE,GAAG,CACjB,aAAa,CAAE,MAAM,CACtB,AAED,AAAA,YAAY,AAAC,CACX,KAAK,CAAE,IAAI,CACZ,AAED,MAAM,2DACJ,CAAA,AAAA,wBAAwB,AAAC,CACvB,KAAK,CAAE,KAAK,CACb,AAED,AAAA,cAAc,AAAC,CACb,QAAQ,CAAE,MAAM,CAChB,aAAa,CAAE,eAAe,CAC9B,KAAK,CAAE,KAAK,CACb,AACD,AAAA,YAAY,AAAA,CACV,KAAK,CAAE,IAAI,CACZ,CATA"
+}
